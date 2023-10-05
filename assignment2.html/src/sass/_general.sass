@@ -1,0 +1,482 @@
+a 
+	text-decoration: none !important 
+header 
+	position: relative 
+	height: 50px 
+	background-color: #212121 
+.menu 
+	background-color: #212121 
+	position: fixed 
+	top: 0 
+	right: 0 
+	width: 100% 
+	display: flex 
+	justify-content: center 
+	padding: 13px 70px 
+	margin: 0 
+	list-style: none 
+	z-index: 2 
+	&_link 
+		color: #FFF 
+		font-size: 14 px 
+		font-style: normal 
+		font-weight: 300 
+	&_item 
+		border-right: 2px dotted black 
+		padding-right: 35px 
+		padding-left: 35px 
+		&:last-child
+			border-right: none
+.hamburger
+	display: none
+	 
+.subheader
+	
+	margin-top: 50px 
+	width: 100% 
+	position: absolute 
+	height: 87px 
+	background-color: rgba(0, 0, 0, 0.6) 
+	z-index: 1 
+	.subheader_logo 
+		display: block 
+		margin-top: 16px 
+		width: 100% 
+	.subh_official 
+		margin-top: 6px 
+		color: #FFF 
+		font-size: 13px 
+		font-style: normal 
+		font-weight: 100 
+		opacity: 0.5 
+	.subh_btn 
+		display: block 
+		margin-top: 24px 
+		margin-left: 2px 
+		border-radius: 4px 
+		border: none 
+		padding: 12px 15px 
+		background: linear-gradient(0deg, $color1 0%, $color1 100%) 
+		box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset 
+		color: #FFF 
+		text-align: center 
+		text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
+		font-size: 14px 
+		font-style: normal 
+		font-weight: 400 
+		text-transform: uppercase 
+		+btn_hover
+	
+	
+
+
+.subh_call 
+	display: block 
+	margin-top: 24px 
+	color: #FFF 
+	text-align: right 
+	font-size: 12px 
+	font-style: normal 
+	font-weight: 300 
+	text-align: end 
+.subh_tel 
+	color: #FFF 
+	display: block 
+	margin-top: 8px 
+	text-align: end 
+	font-size: 22px 
+	font-style: normal 
+	font-weight: 400 
+	line-height: 12px 
+	text-transform: uppercase 
+
+.promo 
+	min-height: 800px 
+	padding: 150px 0 135px 0 
+	background: url(https://storage.googleapis.com/tda-website/2022/09/coding-man-scaled.jpg) center (center/cover) no-repeat
+	&_header 
+		color: #FFF 
+		margin-top: 10px 
+		text-align: center 
+		font-size: 60px 
+		font-style: normal 
+		font-weight: 700 
+		text-transform: uppercase 
+		line-height: 60px 
+	&_subh 
+		text-align: center 
+		color: #FFF 
+		font-size: 36px 
+		font-style: normal 
+		font-weight: 400 
+		line-height: 48px 
+		text-transform: uppercase 
+		line-height: 36px 
+	&_descr 
+		color: #FFF 
+		display: block 
+		margin-top: 20px 
+		text-align: center 
+		font-size: 18px 
+		font-style: normal 
+		font-weight: 400 
+		line-height: 24px 
+	&_btn 
+		display: block 
+		margin: 110px auto 0 auto 
+		border-radius: 4px 
+		border: none 
+		padding: 20px 
+		background: linear-gradient(0deg, $color1 0%, $color1 100%) 
+		box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset 
+		color: #FFF 
+		text-align: center 
+		text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
+		font-size: 18px 
+		font-style: normal 
+		font-weight: 400 
+		text-transform: uppercase 
+		+btn_hover
+.rectangle_8 
+	display: block 
+	width: 113px 
+	height: 24px 
+	margin: 20px auto 0 auto 
+	color: #FFF 
+	background-color: black 
+	text-align: center 
+	padding-top: 4px 
+	font-size: 11px 
+	font-style: normal 
+	font-weight: 400 
+	text-transform: uppercase 
+.head_8 
+	margin-top: 25px 
+	color: #222 
+	text-align: center 
+	font-size: 38px 
+	font-style: normal 
+	font-weight: 700 
+	text-transform: uppercase 
+.a_8 
+	min-height: 845px 
+	padding: 20px 0 64px 0
+.block8 
+	display: flex 
+	justify-content: center 
+	margin-top: 26px 
+.round8 
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	width: 113px 
+	height: 113px 
+	background-color: $color1 
+	border-radius: 100% 
+.text8 
+	margin-left: 26px 
+	width: 375px 
+	color: #202020 
+	font-size: 15px 
+	font-style: normal 
+	font-weight: 300 
+	line-height: 21px 
+	span 
+		color: $color1 
+		font-size: 17px 
+		font-style: normal 
+		font-weight: 400 
+		line-height: 21px 
+
+.label
+	display: block 
+	width: 113px 
+	height: 24px 
+	margin: 20px auto 0 auto 
+	color: #FFF 
+	background-color: black 
+	text-align: center 
+	padding-top: 4px 
+	font-size: 11px 
+	font-style: normal 
+	font-weight: 400 
+	text-transform: uppercase 
+
+.title
+	margin-top: 25px 
+	color: #222 
+	text-align: center 
+	font-size: 38px 
+	font-style: normal 
+	font-weight: 700 
+	text-transform: uppercase
+
+.subtitle
+	color: #222
+	text-align: center
+	font-size: 17px
+	font-style: normal
+	font-weight: 400
+
+.mobile
+	min-height: 864px
+	padding: 48px 0 80px 0
+	background: url('../img/bg/mobile_bg.png') center (center/cover) no-repeat
+	.row
+		margin-top: 30px
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto 
+		margin-bottom: 19px 
+		padding-top: 88px
+		&_1
+			background: url('../img/card/Карточка 1.png')
+		&_2
+			background: url('../img/card/Карточка 2.png')
+		&_3
+			background: url('../img/card/Карточка 3.png')
+		&_4
+			background: url('../img/card/Карточка 4.png')
+		&_5
+			background: url('../img/card/Карточка 5.png')
+		&_6
+			background: url('../img/card/Карточка 6.png')
+		&_subtitle
+			color: #FFF
+			text-align: center
+			font-size: 24px
+			font-style: normal
+			font-weight: 400
+			line-height: 31px
+			text-transform: uppercase	
+		&_plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute 
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			background-color: black
+			width: 29px
+			height: 29px
+			margin: 0 auto
+			border-radius: 100%
+			cursor: pointer
+			&::before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $color1
+			&::after
+				content: ''
+				position: absolute
+				display: block
+				height: 14px
+				width: 2px
+				background-color: $color1
+			&:hover
+				&::before, &::after
+					background-color: $color2
+					transition: 0.6s
+					transform: rotate(360deg)
+
+
+.car
+	padding-top: 60px
+	background: url('../img/bg/bgcar.png')
+	min-height: 900px
+	
+	.label
+		background-color: white
+		color: black
+	.title
+		color: white
+		margin-top: 27px
+	.subtitle
+		color: white
+	&_img
+		display: block
+		margin: 0 auto
+		margin-top: 54px
+		// margin-top: 54px
+		width: 760px
+		height: 480px
+	&_descr
+		color: #222
+		text-align: center
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+		line-height: 24px
+	.sl
+		display: flex
+		justify-content: center
+		.sui
+			background-color: $color1
+			margin-top: 20px
+			width: 284px
+			border-radius: 4px
+			border: none
+			text-align: center 
+			text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
+			font-size: 14px 
+			font-style: normal 
+			font-weight: 400 
+			text-transform: uppercase 
+			&:hover
+				background-color: $color2
+				filter: opacity(0.7)
+				transition: 3s	
+				transform: rotate(2880deg)		
+
+.require
+	padding: 68px 0 90px 0
+	&_block
+		margin: 33px 0 
+		&_nmb
+			margin-bottom: 0
+	&_title
+		color: #1CA8C3
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			color: #222
+			font-size: 17px 
+			font-style: normal
+			font-weight: 300
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../icons/greenV.png') center (center/cover) no-repeat
+	&_descr
+		color: #1CA8C3
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+		line-height: 24px
+	.warning
+		.require_title
+			color: $color2
+		.require_list
+			li
+				&::before
+					background: url('../icons/redV.png')	
+
+.world
+	min-height: 720px
+	background: url(https://top-fon.com/uploads/posts/2023-01/1674784361_top-fon-com-p-fon-dlya-prezentatsii-triz-108.jpg)
+	display: flex
+	padding-top: 40px
+	.label
+		color: black
+		background-color: white
+	.title
+		color: white
+	.subtitle
+		color: white
+	.city
+		display: flex
+		justify-content: center
+		margin-top: 470px
+		color: $color1
+		text-align: center
+		font-size: 15px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+	
+.footer
+	position: relative
+	min-height: 174px
+	display: flex
+	justify-content: end
+	&_divider
+		margin: 0 auto
+		margin-top: 12px
+		border-radius: 4px
+		background-color: $color1
+		width: 300px
+		height: 7px
+	&_h1
+		margin-top: 30px
+		display: flex
+		justify-content: space-between
+		.footer_1
+			color: #070716
+			font-size: 15px
+			font-style: normal
+			font-weight: 300
+			text-transform: uppercase
+	&_h2
+		margin-top: 10px
+		display: flex
+		justify-content: space-between
+		.footer_2
+			color: #999
+			font-size: 11px
+			font-style: normal
+			font-weight: 300
+			text-transform: uppercase
+	&_lang
+		margin-top: 25px
+		color: $color1
+		text-align: center
+		font-size: 11px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+	&_soc
+		position: absolute
+		margin-top: 45px
+		margin-right: 45px
+		display: flex
+		&_round
+			width: 35px
+			height: 35px
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 100%
+			background-color: black
+			margin-right: 4px	
+	&_download
+		margin-top: 45px
+		margin-left: 45px
+		position: absolute
+		height: 27px
+		width: 260px
+
+.xs-visible
+	display: none
+
+.aboutus
+	margin-top: 1px
+	margin-bottom: 30px
+	background: url(https://d3gy6cds9nrpee.cloudfront.net/uploads/2023/05/uber-getty-2.png)
+	.promo_header
+		margin-top: 110px
+	.promo_descr
+		margin-bottom: 80px
+	.ableft
+		margin-left: 115px
+	h2
+		margin-top: 30px
+	h3
+		margin-top: 30px
+        
