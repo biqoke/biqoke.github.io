@@ -1,0 +1,25 @@
+{
+	"name": "week4",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@ngneat/falso": "^7.1.1",
+		"@prisma/client": "^5.9.0",
+		"array-sort": "^1.0.0",
+		"axios": "^1.6.7",
+		"express": "^4.18.2",
+		"http-status": "^1.7.3",
+		"node-vk-sdk": "^1.1.7",
+		"prisma": "^5.9.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.2"
+	}
+}
