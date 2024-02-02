@@ -3,7 +3,7 @@ const fileUpload = require('express-fileupload')
 const app = express()
 app.use(express.json())
 app.use(fileUpload())
-const PORT = 3000
+const PORT = 80
 
 const authorRoutes = require('./app/routers/authorsRouter')
 const bookRoutes = require('./app/routers/booksRouter')
