@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration/Login - Astana Census Project</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #721e6f, #872a98);
+            color: #fff;
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Form Container */
+        .form-container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h3 {
+            color: #671e72;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #531e72;
+            color: #fff;
+            padding: 0.8rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #862a98;
+        }
+
+        .toggle-link {
+            color: #4e1e72;
+            text-align: center;
+            display: block;
+            margin-top: 1rem;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* eGov Button */
+        .egov-button {
+            background: #4caf50;
+            color: #fff;
+            padding: 0.8rem;
+            margin-top: 1rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .egov-button:hover {
+            background: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background: #631e72;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Registration | Login</h1>
+        <p>Astana Census Project - MAYBA</p>
+        <a href="index.html" style="color: white; text-decoration: underline;">Back to Home</a>
+    </header>
+
+    <!-- Registration/Login Form -->
+    <section class="form-container">
+        <!-- Registration Form -->
+        <div id="register-form">
+            <h3>Register</h3>
+            <form>
+                <label for="reg-iin">IIN</label>
+                <input type="text" id="reg-iin" name="reg-iin" maxlength="12" required>
+
+                <label for="reg-name">Name</label>
+                <input type="text" id="reg-name" name="reg-name" required>
+
+                <label for="reg-surname">Surname</label>
+                <input type="text" id="reg-surname" name="reg-surname" required>
+
+                <label for="reg-email">Email</label>
+                <input type="email" id="reg-email" name="reg-email" required>
+
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="reg-password" required>
+
+                <label for="reg-confirm-password">Confirm Password</label>
+                <input type="password" id="reg-confirm-password" name="reg-confirm-password" required>
+
+                <button type="submit">Register</button>
+                <button type="button" class="egov-button" onclick="loginWithEGov()">Register via eGov.kz</button> <!-- eGov button -->
+            </form>
+            <p class="toggle-link" onclick="toggleForm()">Already have an account? Login here</p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" style="display: none;">
+            <h3>Login</h3>
+            <form>
+                <label for="login-iin">IIN</label>
+                <input type="text" id="login-iin" name="login-iin" maxlength="12" required>
+
+                <label for="login-surname">Surname</label>
+                <input type="text" id="login-surname" name="login-surname" required>
+
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="login-email" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" required>
+
+                <button type="submit">Login</button>
+                <button type="button" class="egov-button" onclick="loginWithEGov()">Login via eGov.kz</button> <!-- eGov button -->
+            </form>
+            <p class="toggle-link" onclick="toggleForm()">Don't have an account? Register here</p>
+        </div>
+    </section>
+
+    <!-- JavaScript for Form Toggle and eGov.kz Simulation -->
+    <script>
+        function toggleForm() {
+            const registerForm = document.getElementById('register-form');
+            const loginForm = document.getElementById('login-form');
+
+            if (registerForm.style.display === 'none') {
+                registerForm.style.display = 'block';
+                loginForm.style.display = 'none';
+            } else {
+                registerForm.style.display = 'none';
+                loginForm.style.display = 'block';
+            }
+        }
+
+        // Function to simulate redirection to eGov.kz for login/registration
+        function loginWithEGov() {
+            alert("Redirecting to eGov.kz for authentication...");
+            // Redirect to eGov.kz login page (simulated)
+            window.location.href = "https://egov.kz"; // Replace with actual eGov login URL if integrated
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MAYBA | Astana Census Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
